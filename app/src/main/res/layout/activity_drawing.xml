@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawingActivity"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lineColor"
+            android:id="@+id/lineColorID"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/lineColorID"
+            android:id="@+id/ColorRadioGrp"
+            android:layout_marginBottom="30dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/redColorString" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GreenColorString"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BlueColorString"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lineThinkness"
+            android:layout_toEndOf="@id/lineColorID"
+            android:layout_marginStart="50dp"
+            android:id="@+id/LTID"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:id="@+id/LTSpinner"
+            android:layout_below="@id/LTID"
+            android:layout_toEndOf="@id/ColorRadioGrp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ArrowKeysID"
+            android:text="@string/ArrowKeys"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/LTID"/>
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/ArrowKeysID"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@id/LTSpinner"
+            android:background="@drawable/ic_key_arrow_up_black_24dp" />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/down"
+            android:layout_below="@id/up"
+            android:layout_toStartOf="@id/right"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_key_arrow_down_black_24dp" />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/left"
+            android:layout_toStartOf="@id/right"
+            android:layout_marginEnd="30dp"
+            android:layout_below="@id/up"
+            android:background="@drawable/ic_key_arrow_left_black_24dp" />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@id/up"
+            android:layout_below="@id/up"
+            android:id="@+id/right"
+            android:background="@drawable/ic_key_arrow_right_black_24dp" />
+
+        <!-- This is the next Line-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ColorRadioGrp"
+            android:text="@string/x"
+            android:id="@+id/xID"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_toEndOf="@id/xID"
+            android:layout_below="@id/ColorRadioGrp"
+            android:id="@+id/xEditView"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yID"
+            android:text="@string/y"
+            android:layout_toEndOf="@id/xEditView"
+            android:layout_marginStart="50dp"
+            android:layout_below="@id/ColorRadioGrp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_toEndOf="@id/yID"
+            android:layout_below="@id/ColorRadioGrp"
+            android:id="@+id/yEditText"/>
+
+        <Button
+            android:id="@+id/Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LTSpinner"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_toEndOf="@id/yEditText"
+            android:text="@string/clear" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/reusableImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:minHeight="300dp"
+        android:minWidth="300dp" />
+
+
+</LinearLayout>

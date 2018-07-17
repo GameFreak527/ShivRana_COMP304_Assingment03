@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ShivRana_COMP304_Assingment03</string>
+    <string name="selectOption">Choose any option to perform a Task</string>
+    <string name="lineColor">Line Color</string>
+    <string name="redColorString">Red</string>
+    <string name="GreenColorString">Green</string>
+    <string name="BlueColorString">Blue</string>
+    <string name="lineThinkness">Line Thickness</string>
+    <string name="ArrowKeys">Arrow Keys</string>
+    <string name="x">x =</string>
+    <string name="y">y =</string>
+    <string name="clear">Clear</string>
+    <string name="Start">Start</string>
+    <string name="Stop">Stop</string>
+    <string-array name="list">
+        <item>Drawing</item>
+        <item>Framed Animation</item>
+        <item>Tweened Animation</item>
+    </string-array>
+    <string-array name="spinner">
+        <item>15</item>
+        <item>30</item>
+        <item>55</item>
+    </string-array>
+</resources>

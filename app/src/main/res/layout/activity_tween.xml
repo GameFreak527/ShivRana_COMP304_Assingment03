@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TweenActivity"
+    android:background="@drawable/background">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Start"
+        android:id="@+id/tweenStart"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="90dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Stop"
+        android:id="@+id/tweenStop"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@id/tweenStart"
+        />
+
+    <ImageView
+        android:id="@+id/earth"
+        android:layout_width="86dp"
+        android:layout_height="111dp"
+        android:layout_below="@id/moon"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/earth" />
+
+    <ImageView
+        android:id="@+id/moon"
+        android:layout_width="108dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/tweenStart"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/moon" />
+</RelativeLayout>
